@@ -6,7 +6,7 @@ Within this Extract, Transform, Load (ETL) mini project, our group of four has p
 ![image](https://github.com/lishanisrikaran/Crowdfunding_ETL/assets/126973634/fb1ab855-ae03-4696-b1a9-a2f46d0f8b4c)
 
 Within the file name <b>'ETL_Mini_Project_LSrikaran_JFrazer_SQureshi_TAhmad.ipynb'</b> the following DataFrames are created:
-<li> Create the Category and Subcategory DataFrames
-<li> Create the Campaign DataFrame
-<li> Create the Contacts DataFrame
-<li> Create the Crowdfunding Database
+<li> Category and Subcategory DataFrames
+<li> Campaign DataFrame
+<li> Contacts DataFrame
+<li> Crowdfunding Database

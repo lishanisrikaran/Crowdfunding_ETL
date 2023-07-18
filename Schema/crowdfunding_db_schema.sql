@@ -1,3 +1,8 @@
+-- Creates the crowdfunding_db
+CREATE DATABASE crowdfunding_db
+
+-- Now the tables which will be stored within the crowdfunding_db will be created:
+
 -- Creates category table.
 
 CREATE TABLE category (
@@ -5,10 +10,6 @@ CREATE TABLE category (
         category VARCHAR(50) NOT NULL,
         PRIMARY KEY (category_id)
         );
-		
--- Selects category table.
-
-SELECT * FROM category;
 
 --------------------------------------------------------------
 
@@ -19,11 +20,7 @@ CREATE TABLE subcategory (
         subcategory VARCHAR(50) NOT NULL,
         PRIMARY KEY (subcategory_id)
         );
-		
--- Selects category table.
-
-SELECT * FROM subcategory;
-
+        
 --------------------------------------------------------------
 
 -- Creates contacts table.
@@ -36,9 +33,6 @@ CREATE TABLE contacts (
 	PRIMARY KEY (contact_id)
 	);
 
--- Selects contacts table.
-
-SELECT * FROM contacts;
 --------------------------------------------------------------
 
 -- Creates campaign table.
@@ -63,7 +57,17 @@ CREATE TABLE campaign (
 	FOREIGN KEY (subcategory_id) REFERENCES subcategory(subcategory_id),
 	PRIMARY KEY (cf_id)
      );
+     
+-- Now the csv files can be imported using the GUI, please refer to the word document to see steps. Once imported, you can view the tables created using the below SELECT statements.
+
+-- Selects category table.
+SELECT * FROM category;
+
+-- Selects subcategory table.
+SELECT * FROM subcategory;
+
+-- Selects contacts table.
+SELECT * FROM contacts;
 		
 -- Selects campaign table.
-
 SELECT * FROM campaign;
